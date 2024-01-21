@@ -21,13 +21,13 @@ const ReplyPostService= async (Request,PostModel) => {
             const UpdateRating = await PostModel.updateOne(
                 {comments : {$elemMatch : alreadyRated}},
                 {
-                  "$push":
-                          {"comments.$.reply":
-                                 {
-                                   "replyBy": LoginUserID,
-                                   "text": text
-                                 }
-                         }
+                    "$push":
+                        {"bookings.$.reply":
+                                {
+                                    "replyBy": LoginUserID,
+                                    "text": text
+                                }
+                        }
                 }
             )
 
