@@ -1,5 +1,5 @@
 const app = require('./app');
-const http = require('https');
+const http = require('http');
 const socketIo = require('socket.io')
 const server = http.createServer(app);
 const PORT=5000;
