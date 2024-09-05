@@ -53,11 +53,22 @@ app.use(Limiter);
 dbConnect();
 
 
-// usage of routes
+//tesing-route
+app.get('/', (req, res)=>{
+    res.send('This is Social Media Api')
+})
+
+
+
+
+// usage of application routes
 app.use('/api/auth', authRouter)
 app.use('/api/user', userRouter)
 app.use('/api/post', postRouter)
 app.use('/api/upload', uploadRouter)
+
+
+
 
 
 
