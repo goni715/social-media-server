@@ -1,5 +1,4 @@
 const UsersModel = require("../../models/Users/UsersModel");
-const jwt = require("jsonwebtoken");
 const UserCreateService = require("../../services/user/UserCreateService");
 const UserLoginService = require("../../services/user/UserLoginService");
 const GetAllUsersService = require("../../services/user/GetAllUsersService");

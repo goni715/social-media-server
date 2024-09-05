@@ -6,9 +6,9 @@ const CurrentDate = require("../DateHelper");
 
 
 const storage = multer.diskStorage({
-    destination: function (req, file, cb) {     //cb=Callback
-        cb(null, 'uploads/');
-    },
+    // destination: function (req, file, cb) {     //cb=Callback
+    //     cb(null, 'uploads/');
+    // },
     filename: function (req, file, cb) {
         const currentDate = CurrentDate();
         const uniqueSuffix = currentDate + "-" + Math.round(Math.random() * 1e9);
